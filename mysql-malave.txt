@@ -1,0 +1,13 @@
+INSERT INTO `#`(`id_#`, `nombre`, `apellido`, `edad`, `sexo`, `telefono`, `dirección`) VALUES ('#id_#','#nombre','#apellido','#edad','#sexo','#telefono','#dirección') *Ingresar valores a una tabla
+
+SELECT `nombre` FROM `#` WHERE `id_#` = 1 *Seleccionar valores de una tabla
+
+DELETE FROM `#` WHERE `id_#` = 1 *Eliminar una tabla
+
+CREATE TABLE `ciudad` (`id_paises` int AUTO_INCREMENT PRIMARY KEY, ``pais` varchar(50)) *Crear tablas
+
+CREATE TABLE `ciudad` (`id_ciudad` int AUTO_INCREMENT PRIMARY KEY, `ciudad` varchar(50), `id_pais` int) *Linkear tablas
+
+INSERT into `ciudad` (`id_ciudad`,`ciudad`,`id_pais`) VALUES (not null, 'Maracay', '1'), (not null, 'Valencia', '1'), (not null, 'cumana', '1'), (NOT null, 'barcelona', '1'), (not null, 'caracas', '1'); *Agregar valores a la tabla de forma masiva
+
+SELECT ciudad.id_ciudad, ciudad.ciudad, paises.id_pais, paises.pais from ciudad INNER join paises ON ciudad.id_pais = paises.id_pais where ciudad.id_pais= 1; *Hacer tablas con los valores de la misma
