@@ -7,7 +7,7 @@ def conectar_bd():
             host='localhost',
             user='root',
             password='', #Reemplazar por la contraseña de la base de datos
-            database='restaurante' #Reemplazar por el nombre de la base de datos
+            database='profesores' #Reemplazar por el nombre de la base de datos
         )
         print('Conexión exitosa') #Mensaje de éxito
         return conexion

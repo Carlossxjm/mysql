@@ -31,4 +31,4 @@ def conectar_bd():
         pass
 
 conexion = conectar_bd() # Llamamos a la función conectar_bd
-# conexion.close() # Cerramos la conexión
+# conexion.close() # Cerramos la conexión s
