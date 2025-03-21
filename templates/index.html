@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profesores</title>
+    <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'css/main.css') }}">
 </head>
 <body>
     <h1>Lista de Pacientes</h1>
@@ -12,17 +13,19 @@
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
-                <th>otros Campos</th>
+                <th>Descripcion</th>
+                <th>Duracion</th>
             </tr>
         </thead>
         <tbody>
-            {% for curso in profesores %}
+            {% for curso in curso %}
             <tr>
                 <td>{{ curso[0] }}</td>
                 <td>{{ curso[1] }}</td>
                 <td>{{ curso[2] }}</td>
+                <td>{{ curso[3] }}</td>
             </tr>
-            {% {% endfor %} %}
+            {% endfor %}
         </tbody>
     </table>
 </body>
