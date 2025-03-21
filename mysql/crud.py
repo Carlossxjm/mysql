@@ -1,5 +1,5 @@
 
-from conexion2 import conectar_bd
+from mysql.conexion2 import conectar_bd
 import mysql.connector
 
 def crear_registro(conexion,curso,duracion,descripcion):
